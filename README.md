@@ -5,7 +5,14 @@ React js, Tailwind css, MongoDB
 
 # To run the Application :
 Download the zip folder or clone the gitRepository with vscode.
-Open terminal and type "npm install" for installation of node_modules and then to run the application type "npm run dev"
+
+for backend:
+1 open terminal and type cd backend
+2 type "npm install" for installation of node_modules and then to run the server type "npm start"
+
+for frontend:
+1 open terminal and type cd frontend
+2 type "npm install" for installation of node_modules and then to run the app type "npm run dev"
 
 # SS
 ![Vite + React - Google Chrome 12_9_2023 12_24_47 AM](https://github.com/Mayukhy/vigoroushealthtechMERNassignment/assets/107027766/4690677e-6e6c-4f3d-835c-139e247f0621)
