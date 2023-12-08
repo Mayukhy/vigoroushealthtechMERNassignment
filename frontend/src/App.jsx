@@ -1,6 +1,6 @@
-import { useState } from 'react'
+
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
-import './App.css'
+
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import ForgetPassword from './pages/ForgetPassword'

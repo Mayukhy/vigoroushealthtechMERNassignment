@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import instance from '../instance'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,7 +25,7 @@ export default function ResetPassword() {
            })
        .catch(()=>{
            toast("Password length should be greater than 7")
-           console.log("incorrect email or password")})
+           console.log("wrong password")})
      }
    changePassword() 
   }
@@ -63,7 +63,7 @@ export default function ResetPassword() {
             <input
             value={password}
             onChange={(e)=>setPassword(e.target.value)}
-            id="password" name="password" type="email" required className=" px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            id="password" name="password" type="password" required className=" px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
           </div>
         </div>
 

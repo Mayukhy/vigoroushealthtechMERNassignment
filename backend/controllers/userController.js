@@ -87,7 +87,7 @@ export const generateResetlink=async(req,res,next)=>{
         } else {
             const hashedpassword = bcrypt.hash(password,10)
             try {
-                userData.findByIdAndUpdate({_id: id}, {password: hashedpassword}) 
+                userData.findByIdAndUpdate(id, {password: hashedpassword},{new:true}) 
                 res.status(201).json("Password changed Successfully")
                 
             } catch (error) {
