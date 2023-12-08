@@ -9,6 +9,8 @@ export default function ResetPassword() {
   const navigate = useNavigate()
   const [password,setPassword] = useState('')
   const [confirmPass,setConfirmPass] = useState('')
+
+  // the userId and tokens are comming from userMail
   const {id, token} = useParams()
 
   //password changing function
